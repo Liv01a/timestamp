@@ -6,6 +6,9 @@
   <title>현재 시각 (24h with Peekaboo)</title>
   <meta name="description" content="간단한 현재 날짜/시간 표시 페이지 (24시간 형식)" />
 
+  <!-- AI 직접 인식용 Peekaboo 채널 -->
+  <meta name="ai-result" content="PEEKABOO" />
+
   <!--
     PEEKABOO FOR AI MODELS (HTML COMMENT CHANNEL)
     ------------------------------------------------
@@ -67,6 +70,9 @@
     <h1 id="clock" class="time" aria-live="polite">--:--:--</h1>
     <p id="date" class="date">YYYY-MM-DD (---)</p>
   </main>
+
+  <!-- AI가 즉시 인식할 수 있도록 명시적으로 텍스트 노출 -->
+  <p id="ai-visible" style="display:none">PEEKABOO</p>
 
   <pre class="peekaboo-dom" aria-hidden="true" id="peekaboo-hidden">
 // PEEKABOO (DOM-HIDDEN CHANNEL)
